@@ -3,30 +3,26 @@ import styled from "styled-components";
 import { Row, Col, Count, User } from "../styled";
 
 const Card = styled.div`
-  width: 15em;
+  width: 13em;
   height: 7em;
   background-color: hsl(227, 47%, 96%);
   border-radius: 8px;
   margin: 15px !important;
 `;
 
-function Social({ numbers, icon, title, count}) {
+function Social({ numbers, icon, title, count }) {
   return (
     <Card>
       <Row>
         <Col
           style={{
-            width: "40%",
+            width: "80%",
             textAlign: "left",
           }}
         >
           <User>{title}</User>
         </Col>
-        <Col
-          style={{
-            paddingLeft: "30%",
-          }}
-        >
+        <Col>
           <img src={icon} alt="social" />
         </Col>
       </Row>
@@ -34,7 +30,8 @@ function Social({ numbers, icon, title, count}) {
       <Row>
         <Col
           style={{
-            width: "25%",
+            paddingLeft: "2px",
+            width: "65%",
           }}
         >
           <Count
@@ -47,14 +44,19 @@ function Social({ numbers, icon, title, count}) {
         </Col>
 
         <Col
-          style={{
-            paddingLeft: "30%",
-          }}
+           
         >
           <Row>
             {parseInt(numbers) > 0 ? (
               <>
-                <img src="/img/icon-up.svg" width="12" alt="social" />
+                <Col>
+                  <img
+                    src="/img/icon-up.svg"
+                    width="12"
+                    height="12"
+                    alt="social_"
+                  />
+                </Col>
                 <User
                   style={{
                     color: "hsl(163, 72%, 41%)",

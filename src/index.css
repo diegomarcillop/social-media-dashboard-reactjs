@@ -51,7 +51,7 @@ html, body {
 }
 
 input:checked + .slider {
-  background-color: rgb(175, 231, 217);
+  background-color: rgb(231, 202, 175);
 }
 
 input:focus + .slider {
@@ -70,4 +70,9 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+.dark-mode {
+  background-color: hsl(228, 28%, 20%)!important;
+  color: white!important;
 }
