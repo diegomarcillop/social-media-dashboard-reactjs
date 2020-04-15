@@ -1,12 +1,11 @@
 import styled from "styled-components";
 
 export const Card = styled.div`
-width: 15em;
+width: 13em;
 height: 12em;
 background-color: hsl(227, 47%, 96%);
 border-radius: 8px;
 margin: 15px !important;
-
 border-top: 4px solid;
 `;
 

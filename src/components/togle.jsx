@@ -1,15 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 
 function Togle() {
-
-   const onClick = (evt) => {
-       console.log(evt);
-   } 
-
+  const onClick = () => {
+    //    document.getElementById('card').classList.toggle('dark-mode')
+  };
   return (
-    <> 
+    <>
       <label className="switch">
-        <input type="checkbox"  onClick={onClick} />
+        <input type="checkbox" onClick={onClick} />
         <span className="slider round" />
       </label>
     </>

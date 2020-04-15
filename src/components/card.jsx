@@ -2,18 +2,16 @@ import React from "react";
 import { Card, Row, Col, Count, SubTitle, User } from "../styled";
 
 function CardS({ count, icon, color, user, numbers }) {
-
   const card = React.createRef();
-
- 
-
 
   return (
     <>
-      <Card ref={card}  
+      <Card
+        ref={card}
+        id="card"
         style={{
           borderTopColor: `${color} `,
-          textAlign: 'center'
+          textAlign: "center",
         }}
       >
         <Row>

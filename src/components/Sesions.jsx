@@ -7,6 +7,8 @@ const Container = styled.div`
   display: flex;
   flex-direction: row;  
   flex-wrap: wrap;
+  justify-content: space-between;
+
 `;
 
 function Sesions() {
@@ -30,7 +32,7 @@ function Sesions() {
         user="@realnathanf"
         count="11k"
         icon="/img/icon-instagram.svg"
-        color="linear-gradient  hsl(37, 97%, 70%) to hsl(329, 70%, 58%)"
+        color="rgb(255, 192, 133)"
         numbers="1099"
       />
       <Card

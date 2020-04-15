@@ -7,6 +7,7 @@ function OverView() {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-between;
   `;
 
   return (
